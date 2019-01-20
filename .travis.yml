@@ -6,6 +6,7 @@ jdk:
   - openjdk8
   - openjdk11
 script:
+  - sbt --version
   - sbt scalafmtSbtCheck scalafmtCheck test:scalafmtCheck test
 before_script:
   - sudo /etc/init.d/mysql stop
