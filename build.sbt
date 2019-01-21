@@ -1,6 +1,5 @@
 import com.typesafe.sbt.license.{DepModuleInfo, LicenseInfo}
 import com.typesafe.sbt.pgp.PgpKeys._
-enablePlugins(RpmPlugin)
 
 val Organization = "io.github.gitbucket"
 val Name = "gitbucket"
@@ -259,3 +258,6 @@ licenseOverrides := {
   case DepModuleInfo("com.github.bkromhout", "java-diff-utils", _) =>
     LicenseInfo(LicenseCategory.Apache, "Apache-2.0", "http://www.apache.org/licenses/LICENSE-2.0")
 }
+
+enablePlugins(RpmPlugin)
+rpmRelease := "1"
