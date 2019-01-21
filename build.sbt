@@ -1,5 +1,6 @@
 import com.typesafe.sbt.license.{DepModuleInfo, LicenseInfo}
 import com.typesafe.sbt.pgp.PgpKeys._
+enablePlugins(RpmPlugin)
 
 val Organization = "io.github.gitbucket"
 val Name = "gitbucket"
